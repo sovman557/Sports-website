@@ -1,0 +1,746 @@
+html, body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: #65CD6D;
+  color: white;
+}
+
+
+header {
+  padding: 20px;
+  height: 60px;
+  background-color: black;
+  line-height: 60px;
+}
+
+
+main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  background-image: url("http://tennisconcepts.org/wp-content/uploads/Court-Grass-2.jpg");
+  background-size: cover;
+  color: black;
+}
+
+footer {
+  padding: 10px;
+  height: 100%;
+  box-sizing: border-box;
+  color: white;
+  background-color: black;
+  line-height: 22px;
+}
+
+h1 {
+  margin: 0;
+  border-style: dotted;
+}
+
+article {
+  color: white;
+  background-color: green;
+  list-style-type: none;
+}
+
+.a1 ul {
+  list-style-type: none;
+}
+
+.a1 ul li {
+  padding-bottom: 5px;
+}
+
+.a1 ul li p {
+  padding-bottom: 3px;
+}
+
+.a1 ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.a1 ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.homemain-wrapper {
+  background-color: white;
+  background-size: cover;
+  color: green;
+  width: 1200px;
+  height: 1026px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0px;
+  text-align: center;
+}
+
+.gallery {
+  width: 1200px;
+  height: 500px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.gallery-images {
+  overflow: auto;
+  width: 4800px;
+  height: 500px;
+  transition: margin 0.5s ease-in-out;
+}
+
+.gallery-images img {
+  display: block;
+  float: left;
+  width: 1200px;
+  height: 500px;
+}
+
+.gallery-buttons {
+  line-height: 500px;
+  opacity: 0;
+  width: 1200px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+}
+
+.gallery-buttons:hover {
+  opacity: 1;
+  transition: opacity .2s ease-in-out;
+}
+
+.gallery-prev {
+  text-decoration: none;
+  background-color: rgba(0,0,0,0.5);
+  color: #FFF;
+  float: left;
+  font-weight: bold;
+  font-size: 30pt;
+  padding: 0px 25px;
+}
+
+.gallery-next {
+  background-color: rgba(0,0,0,0.5);
+  text-decoration: none;
+  float: right;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 30pt;
+  padding: 0px 25px;
+}
+
+.a1 {
+  float: left;
+  width: 591px;
+  border-style: solid;
+  height: 440px;
+}
+
+.a2 {
+  float: right;
+  width: 591px;
+  border-style: double;
+  height: 440px;
+}
+
+.a2 h3 {
+  padding-bottom: 10px;
+}
+
+.a2 ul {
+  list-style-type: none;
+}
+
+.a2 li a {
+  text-decoration: none;
+  color: red;
+  padding: 6px;
+  border-radius: 5px;
+  background-color: orange;
+}
+
+.news-pic {
+  height: 180px;
+  width: 400px;
+}
+
+.button {
+  padding: 15px;
+  background-color: red;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  padding: 10px;
+  padding-top: 0px;
+  font-size: 3em;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.wimbledon-logo {
+  vertical-align: middle;
+  height: 75px;
+  padding-right: 30px;
+
+}
+
+
+.background-image {
+  width: 100%;
+  height: 800px;
+  float: left;
+}
+
+.main-menu {
+  float: right;
+}
+
+.main-menu ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.main-menu li {
+  margin-right: 10px;
+  float: left;
+}
+
+.main-menu a {
+  padding: 5px 10px;
+  display: block;
+  text-decoration: none;
+  background-color: #333;
+  color: #FFF;
+  color: white;
+}
+
+.main-menu a:hover {
+  background-color: #555;
+}
+
+.burger {
+  display: none;
+}
+
+.burger-label {
+  display: none;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  float: right;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.burger-label:hover {
+  cursor: pointer;
+  background-color: #CECECD;
+}
+
+.burger-label:before {
+  content: "\2630";
+}
+
+.mobile-menu {
+  width: 250px;
+  position: fixed;
+  top: 0px;
+  left: -250px;
+  transition: left 0.25s ease-in-out;
+  height: 100%;
+  background-color: #EDECEE;
+  overflow-y: scroll;
+}
+
+.mobile-menu h2 {
+  color: white;
+  margin: 0px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ff9000;
+  font-weight: normal;
+}
+
+.mobile-menu ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 5px 15px;
+  color: #556120;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover {
+background-color: rgba(0, 0, 0, 0.15);
+}
+
+.mobile-menu ul li {
+  padding: 2px;
+}
+
+
+@media (min-width: 1250px) {
+  .burger-label {
+    display: none;
+  }
+}
+
+@media (max-width: 1250px) {
+  .burger:checked + .mobile-menu {
+    left: 0;
+    transition: left .25s ease-in-out;
+  }
+  .main-menu {
+    display: none;
+  }
+  .burger-label {
+    display: block;
+  }
+  main {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .gallery-next {
+    display: none;
+  }
+  .gallery-prev {
+    display: none;
+  }
+}
+
+.Social-media {
+  width: 50px;
+  height: 50px;
+  float: right;
+}
+
+.footer-list {
+  text-align: center;
+  list-style-type: none;
+  height: 50px;
+}
+
+.playermain-wrapper {
+  background-color: lightblue;
+  background-size: cover;
+  color: green;
+  width: 1400px;
+  height: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0px;
+  text-align: center;
+}
+
+.playermain-wrapper h1 {
+  background-color: white;
+  border-style: ridge;
+  float: left;
+  padding-left: 360px;
+  padding-right: 369px;
+}
+
+.playermain-wrapper h2 {
+  background-color: white;
+  border-style: ridge;
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 4px;
+  padding-top: 5px;
+
+}
+
+.Seeding-Table {
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  float: left;
+}
+
+
+.Seeding-Table tr td {
+  font-size: 1.5em;
+  border-style: double;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.table-title {
+  background-color: lightgreen;
+}
+
+.seeding-article {
+  float: left;
+  border-style: outset;
+  border-width: thick;
+  border-color: lightpink;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.seeding-article a {
+  text-decoration: none;
+}
+
+.seeding-article p {
+  list-style-type: none;
+  color: Green;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  margin: 0;
+}
+
+.seeding-article-pic {
+  width: 298px;
+  height: 200px;
+}
+
+.Statisticsmain-wrapper {
+  background-color: lightblue;
+  background-size: cover;
+  color: green;
+  width: 1400px;
+  height: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0px;
+  text-align: center;
+}
+
+.Statisticsmain-wrapper h1 {
+  border-style: solid;
+  border-color: grey;
+  border-width: thin;
+  background-color: white;
+}
+
+.Stats-Table {
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  width: 100%;
+}
+
+
+.Stats-Table tr td {
+  font-size: 1.3em;
+  border-style: outset;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.stats-article {
+  float: left;
+  border-style: outset;
+  border-width: thick;
+  background-color: white;
+  color: black;
+  height: 291px;
+  width: 270px;
+}
+
+
+.stats-leader {
+  border-style: outset;
+}
+
+.stats-runners-up {
+  border-style: outset;
+}
+
+.stats-leader table {
+  height: 80px;
+}
+
+.stats-runners-up table {
+  height: 30px;
+  width: 100%;
+}
+
+
+.runners-points-table-data {
+  float: right;
+}
+
+.stats-leader-pic {
+  float: left;
+  height: 80px;
+  width: 90px;
+}
+
+.stats-flag  {
+  height: 20px;
+  width: 30px;
+}
+
+.drawsmain-wrapper {
+  background-color: lightblue;
+  background-size: cover;
+  color: green;
+  width: 1400px;
+  height: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0px;
+  text-align: center;
+}
+
+.drawsmain-wrapper h1 {
+  border-style: solid;
+  border-color: grey;
+  border-width: thin;
+  background-color: white;
+}
+
+.Fourth-Bracket {
+  float: left;
+  width: 350px;
+}
+
+.fourth-round-bracket {
+  background-color: lightblue;
+}
+
+.fourth-round-matches {
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: lightgrey;
+  color: darkgreen;
+  width: 300px;
+  border-radius: 10px;
+  border-style: outset;
+}
+
+.fourth-round-bracket div tr td {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 5px;
+}
+
+.Quater-Finals  {
+  width: 350px;
+  float: left;
+  margin-top: 100px;
+}
+
+.quater-finals-bracket {
+  background-color: lightblue;
+}
+
+.quater-finals-matches {
+  margin-left: 20px;
+  margin-bottom: 155px;
+  background-color: lightgrey;
+  color: darkgreen;
+  width: 300px;
+  border-radius: 10px;
+  border-style: outset;
+}
+
+.quater-finals-bracket div tr td {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 5px;
+}
+
+.Semi-Finals  {
+  width: 350px;
+  float: left;
+  margin-top: 240px;
+}
+
+.semi-finals-bracket {
+  background-color: lightblue;
+}
+
+.semi-finals-matches {
+  margin-left: 20px;
+  margin-bottom: 420px;
+  background-color: lightgrey;
+  color: darkgreen;
+  width: 300px;
+  border-radius: 10px;
+  border-style: outset;
+}
+
+.semi-finals-bracket div tr td {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 5px;
+}
+
+.Finals  {
+  width: 350px;
+  float: left;
+  margin-top: 500px;
+}
+
+.finals-bracket {
+  background-color: lightblue;
+}
+
+.finals-matches {
+  margin-left: 20px;
+  background-color: lightgrey;
+  color: darkgreen;
+  width: 300px;
+  border-radius: 10px;
+  border-style: outset;
+}
+
+.finals-bracket div tr td {
+  background-color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 5px;
+}
+
+.scheduledmain-wrapper {
+  background-color: lightblue;
+  background-size: cover;
+  color: green;
+  width: 1400px;
+  height: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0px;
+  text-align: center;
+}
+
+.scheduledmain-wrapper h1 {
+  float: left;
+  border-style: solid;
+  border-color: grey;
+  border-width: thin;
+  background-color: white;
+  padding-left: 348px;
+  padding-right: 349px;
+}
+
+.scheduledmain-wrapper h2 {
+  border-style: solid;
+  border-color: grey;
+  border-width: thin;
+  background-color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.schedule-Table {
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  float: left;
+}
+
+
+.schedule-Table tr td {
+  color: darkgreen;
+  font-size: 1.3em;
+  border-style: outset;
+  border-width: thin;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.schedule-article {
+  float: left;
+  border-style: outset;
+  border-width: thick;
+  border-color: white;
+  background-color: lightgrey;
+  color: black;
+  height: 202px;
+  width: 354px;
+}
+
+.schedule-article h3 {
+  margin: 0;
+}
+
+.schedule-player {
+  background-color: white;
+  border-style: outset;
+}
+
+.schedule-player table {
+  height: 84px;
+}
+
+
+.schedule-player-pic {
+  float: left;
+  height: 80px;
+  width: 90px;
+}
+
+.schedule-player-flag  {
+  height: 20px;
+  width: 30px;
+}
+
+.schedule-a2 {
+  float: right;
+}
+
+.schedule-a2 .schedule-article {
+  height: 212px;
+  width: 340px;
+}
+
+.schedule-a2 .schedule-player table {
+  height: 89px;
+}
